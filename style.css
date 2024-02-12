@@ -133,7 +133,9 @@
   
   
   
- 
+ * {
+  user-select: none;
+ }
  
 html {
     
@@ -187,14 +189,7 @@ body {
     display: flex;
     flex-direction: row;
     /* gap: 10px; */
-    transition: all ease 0.3s;
-
-    &:active {
-        & > img {
-            transition: all ease 0.3s;
-            scale: 0.95
-        }
-    }
+    
     & > img {
         height: 100px;
         margin-right: 13px;
