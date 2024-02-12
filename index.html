@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" href="assets/codedex-bot-logo.gif">
+</head>
+<body>
+    <div class="main_container">
+        <button class="GoBack_btn" onclick="history.back()">Go Back</button>
+        <div class="container_404">
+            <div class="main_404" onclick="colour_random(document.getElementById('img_404'))">
+                4
+                <img id="img_404" src="assets/coin-cropped.png">
+                4
+            </div>
+            <div class="pgNotFound">
+                Page Not Found
+            </div>
+        </div>
+        <div class="chatbot_box_container">
+            <div class="chatbot_and_text_cont">
+                <img src="assets/codedex-bot-logo.gif">
+                <div class="chatbot_text bubble grow left">
+                    Howdy, Mighty Adventurer! You seem to be lost. Want me to guide you?
+                </div>
+            </div>
+            <div class="homepage_redirect_btn">
+                <a href="https://codedex.io/home" class="eightbit-btn">Take me Home</a>
+            </div>
+
+        </div>
+        <div class="guide_container">
+            <span id="heading">Here's what you should try :</span>
+            <ul>
+                <li>
+                    Try checking for Typos in your URL
+                </li>
+                <li>
+                    Check whether the Page you want to visit still exists
+                </li>
+                <li>
+                    -------- Add other Guidelines to this container --------
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script>
+        
+        function colour_random(element) {
+            element.style.filter = "grayscale(1)";
+            const randomHue = Math.floor(Math.random() * 360); // Generate a random hue value between 0 and 360
+            element.style.filter = `hue-rotate(${randomHue}deg)`; // Apply the random hue rotation
+        }
+
+    </script>
+</body>
+</html>

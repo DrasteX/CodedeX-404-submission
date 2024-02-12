@@ -1,0 +1,271 @@
+@font-face {
+    font-family: P2P;
+    src: url(fonts/press_start_2p/PressStart2P.ttf);
+}
+@font-face {
+    font-family: Prompt;
+    src: url(fonts/Prompt/Prompt-Regular.ttf);
+}
+@font-face {
+    font-family: Pixel;
+    src: url(fonts/Pixelify_Sans/PixelifySans-VariableFont_wght.ttf);
+}
+
+/* Downloaded elements */
+     
+  .bubble {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.3em;
+    background-color: #fff;
+    color: #000;
+    padding: 12px;
+    box-shadow: 0 -4px #fff, 0 -8px #000, 4px 0 #fff, 4px -4px #000, 8px 0 #000, 0 4px #fff, 0 8px #000, -4px 0 #fff, -4px 4px #000, -8px 0 #000, -4px -4px #000, 4px 4px #000;
+    box-sizing: border-box;
+    width: 200px;
+  }
+  .bubble::after {
+    content: "";
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+  }
+  .bubble.shadow {
+    box-shadow: 0 -4px #fff, 0 -8px #000, 4px 0 #fff, 4px -4px #000, 8px 0 #000, 0 4px #fff, 0 8px #000, -4px 0 #fff, -4px 4px #000, -8px 0 #000, -4px -4px #000, 4px 4px #000, 4px 12px rgba(0, 0, 0, 0.1), 12px 4px rgba(0, 0, 0, 0.1), 8px 8px rgba(0, 0, 0, 0.1);
+  }
+  .bubble.mini {
+    width: 110px;
+    font-size: 16px;
+    padding: 4px;
+    font-family: monospace;
+  }
+  .bubble.medium {
+    width: 350px;
+  }
+  .bubble.large {
+    width: 560px;
+    font-size: 24px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .bubble.grow {
+    width: initial;
+  }
+  .bubble.top::after {
+    height: 4px;
+    width: 4px;
+    top: -8px;
+    left: 32px;
+    box-shadow: 0 -4px #000, 0 -8px #000, 0 -12px #000, 0 -16px #000, -4px -12px #000, -8px -8px #000, -12px -4px #000, -4px -4px #fff, -8px -4px #fff, -4px -8px #fff, -4px 0 #fff, -8px 0 #fff, -12px 0 #fff;
+  }
+  .bubble.right::after {
+    height: 4px;
+    width: 4px;
+    top: 84px;
+    right: -8px;
+    background: white;
+    box-shadow: 4px -4px #fff, 4px 0 #fff, 8px 0 #fff, 0 -8px #fff, 4px 4px #000, 8px 4px #000, 12px 4px #000, 16px 4px #000, 12px 0 #000, 8px -4px #000, 4px -8px #000, 0 -4px #fff;
+  }
+  .bubble.bottom::after {
+    height: 4px;
+    width: 4px;
+    bottom: -8px;
+    left: 32px;
+    box-shadow: 0 4px #000, 0 8px #000, 0 12px #000, 0 16px #000, -4px 12px #000, -8px 8px #000, -12px 4px #000, -4px 4px #fff, -8px 4px #fff, -4px 8px #fff, -4px 0 #fff, -8px 0 #fff, -12px 0 #fff;
+  }
+  .bubble.left::after {
+    height: 4px;
+    width: 4px;
+    top: 20px;
+    left: -8px;
+    background: white;
+    box-shadow: -4px -4px #fff, -4px 0 #fff, -8px 0 #fff, 0 -8px #fff, -4px 4px #000, -8px 4px #000, -12px 4px #000, -16px 4px #000, -12px 0 #000, -8px -4px #000, -4px -8px #000, 0 -4px #fff;
+  }
+  
+  
+  .eightbit-btn {
+    background: #ffef12;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+    font-family: P2P;
+    
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    box-shadow: inset -4px -4px 0px 0px #ff8800;
+  }
+  .eightbit-btn:hover, .eightbit-btn:focus {
+    background: #ffee00;
+    box-shadow: inset -6px -6px 0px 0px #ff9900;
+  }
+  .eightbit-btn:active {
+    box-shadow: inset 4px 4px 0px 0px #a5852e;
+  }
+  .eightbit-btn:before, .eightbit-btn:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+  }
+  .eightbit-btn:before {
+    top: -6px;
+    left: 0;
+    border-top: 6px black solid;
+    border-bottom: 6px black solid;
+  }
+  .eightbit-btn:after {
+    left: -6px;
+    top: 0;
+    border-left: 6px black solid;
+    border-right: 6px black solid;
+  }
+  
+  
+  
+ 
+  
+  
+  
+  
+ 
+ 
+html {
+    
+    cursor: url(assets/cursor_regular.png), auto;
+}
+body {
+    
+    background-color: rgb(15, 21, 36);
+    background: url(assets/2825704.gif);
+    background-size: cover;
+    cursor: url(assets/cursor_regular.png), auto;
+    margin: 0px;
+    max-width: 1500px;
+    position: relative;
+    left: 50%; 
+    transform: translateX(-50%);
+}
+
+.main_container {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.GoBack_btn {
+    font-size: 17px;
+    width: min-content;
+    white-space: nowrap;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: Prompt;
+    font-weight: bolder;
+    letter-spacing: 0.7px;
+    padding: 10px 20px;
+    cursor: url(assets/cursor_pointer.png), pointer;
+    
+}
+.container_404 {
+    justify-self: center;
+    display: grid;
+    padding-top: 20px;
+    
+    
+}
+.main_404 {
+    
+    
+    font-size: 105px;
+    color: white;
+    font-family: P2P;
+    display: flex;
+    flex-direction: row;
+    /* gap: 10px; */
+    transition: all ease 0.3s;
+
+    &:active {
+        & > img {
+            transition: all ease 0.3s;
+            scale: 0.95
+        }
+    }
+    & > img {
+        height: 100px;
+        margin-right: 13px;
+    };
+
+}
+
+.pgNotFound {
+    font-family: Prompt;
+    font-size: 20px;
+    opacity: 0.8;
+    color: white;
+    white-space: nowrap;
+    width: min-content;
+    justify-self: center;
+}
+
+.chatbot_text {
+    background-color: rgb(255, 255, 255);
+    padding: 5px 10px;
+}
+
+.chatbot_box_container {
+    justify-self: center;
+    
+    
+}
+.chatbot_and_text_cont {
+    font-family: Pixel;
+    font-weight: bolder;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+    padding: 20px 20px 0px 20px;
+    & > img {
+        height: 90px
+    }
+}
+
+.homepage_redirect_btn {
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: min-content;
+    white-space: nowrap;
+
+    & > a {
+        cursor: url(assets/cursor_pointer.png), pointer;
+    }
+}
+
+.guide_container {
+    backdrop-filter: blur(5px);
+    justify-self: center;
+    border: solid white 1px;
+    border-radius: 20px;
+    color: white;
+    width: fit-content;
+    font-size: 15px;
+    margin: 30px 20px 30px 20px;
+    padding: 10px 40px;
+    font-family: Prompt;
+    filter:drop-shadow(5px 5px 3px black);
+
+    & > span {
+        
+        font-size: 17px;
+        font-weight: bolder;
+        letter-spacing: 1px;
+    }
+}
