@@ -126,10 +126,35 @@
     border-right: 6px black solid;
   }
   
+  /* width */
+::-webkit-scrollbar {
+  width: 7px;
+  border-radius: 20px;
+  display: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 20px;
+}
+
   
   
  
-  
+  /* Main Elements */
   
   
   
@@ -153,6 +178,9 @@ body {
     left: 50%; 
     transform: translateX(-50%);
 }
+
+
+
 
 .main_container {
     display: grid;
