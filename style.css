@@ -208,9 +208,7 @@ html {
     cursor: url(assets/cursor_regular.png), auto;
 }
 body {
-    
-    background-color: rgb(15, 21, 36);
-    background: url(assets/2825704.gif);
+    background: url(assets/background.gif), rgb(15, 21, 36);
     background-size: cover;
     cursor: url(assets/cursor_regular.png), auto;
     margin: 0px;
